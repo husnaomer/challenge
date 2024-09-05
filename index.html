@@ -27,68 +27,7 @@
       href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap"
       rel="stylesheet"
     />
-    <style>
-      body {
-        font-family: "Poor Story", system-ui;
-        margin: 50px auto;
-        max-width: 800px;
-        background-color: #f0ece2;
-      }
-      h1 {
-        text-align: center;
-        padding-bottom: 20px;
-        font-size: 60px;
-      }
-
-      .img {
-        display: block;
-        margin: 0 auto;
-        width: 600px;
-        border-radius: 60px;
-        background-color: #dfd3c3;
-      }
-      p {
-        padding-top: 30px;
-        line-height: 40px;
-        font-size: 40px;
-      }
-      .first-link {
-        font-size: 30px;
-        color: #596e79;
-      }
-      .first-link:hover,
-      .second-link:hover {
-        color: #c7b198;
-        text-decoration: none;
-      }
-      .conclusion {
-        font-size: 25px;
-        text-align: center;
-      }
-      button {
-        display: block;
-        margin: 0 auto;
-        padding: 20px;
-        margin-top: 20px;
-        border: none;
-        background-color: #c7b198;
-        border-radius: 30px;
-        font-size: 25px;
-      }
-      footer {
-        text-align: center;
-        opacity: 0.7;
-        margin-top: 40px;
-      }
-      .second-link {
-        color: #596e79;
-        font-size: 20px;
-        font-weight: bold;
-      }
-      .shadow-xl {
-        box-shadow: 5px 6px 7px rgba(0, 0, 0, 0.4);
-      }
-    </style>
+    <link rel="stylesheet" href="index.css" />
   </head>
 
   <body>
@@ -163,25 +102,6 @@
       >
       with HTML, CSS and JavaScript
     </footer>
-    <script>
-      function contactUs() {
-        let name = prompt("What is your name?");
-
-        if (name.length === 0) {
-          alert`you should enter a name`;
-        } else {
-          let email = prompt("What is your email");
-
-          alert(
-            "Welcome, " +
-              name +
-              "! We are really glad to have you in our super fun comunity"
-          );
-        }
-      }
-
-      let button = document.querySelector("#button");
-      button.addEventListener("click", contactUs);
-    </script>
+    <script src="index.js"></script>
   </body>
 </html>
