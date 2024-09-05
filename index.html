@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tvshow</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Poor Story", system-ui;
+        margin: 50px auto;
+        max-width: 800px;
+        background-color: #f0ece2;
+      }
+      h1 {
+        text-align: center;
+        padding-bottom: 20px;
+        font-size: 60px;
+      }
+
+      .img {
+        display: block;
+        margin: 0 auto;
+        width: 600px;
+        border-radius: 60px;
+        background-color: #dfd3c3;
+      }
+      p {
+        padding-top: 30px;
+        line-height: 40px;
+        font-size: 40px;
+      }
+      .first-link {
+        font-size: 30px;
+        color: #596e79;
+      }
+      .first-link:hover,
+      .second-link:hover {
+        color: #c7b198;
+        text-decoration: none;
+      }
+      .conclusion {
+        font-size: 25px;
+        text-align: center;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        padding: 20px;
+        margin-top: 20px;
+        border: none;
+        background-color: #c7b198;
+        border-radius: 30px;
+        font-size: 25px;
+      }
+      footer {
+        text-align: center;
+        opacity: 0.7;
+        margin-top: 40px;
+      }
+      .second-link {
+        color: #596e79;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .shadow-xl {
+        box-shadow: 5px 6px 7px rgba(0, 0, 0, 0.4);
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Alchemy of Souls</h1>
+
+    <div
+      id="carouselExampleControls"
+      class="carousel slide"
+      data-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/112/544/original/MV5BMmJhZGFhMmItM2RmMC00NWIxLWE5ZjMtMmIwZmJkNTdjZTg4XkEyXkFqcGdeQXVyOTI5NDk4NDQ_._V1_FMjpg_UX1000_.jpg?1706446588"
+            class="d-block img-fluid img"
+            alt=""
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/112/543/original/X06Rd_4f.jpg?1706446564"
+            class="d-block img-fluid img"
+            alt=""
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-target="#carouselExampleControls"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-target="#carouselExampleControls"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </button>
+    </div>
+
+    <p>
+      Set in a fictional country called Daeho that does not exist in history or
+      on maps, it is about the love and growth of young mages as they overcome
+      their twisted fates due to a forbidden magic spell known as the "alchemy
+      of souls", which allows souls to switch bodies. It follows the story of an
+      elite assassin named Naksu, whose soul is accidentally trapped inside the
+      weak body of Mu Deok—Jang Uk's servant from a powerful and noble mage
+      family in the country. The young master of the Jang Family, Jang Uk, holds
+      a dark secret about his scandalous birth. He wants the formidable assassin
+      to help change his destiny.
+    </p>
+    <a href="https://www.netflix.com" target="_blank" class="first-link"
+      >Watch it here</a
+    >
+
+    <hr />
+    <div class="conclusion">
+      If you enjoy this TV show so we do too. You can join in our comunity where
+      we disccuss and share our thought in there.
+    </div>
+    <button class="shadow-xl" id="button">join our comunity</button>
+    <footer>
+      Coded by 👩‍💻
+      <a href="mailto:husnaomer993@gmail.com " class="second-link"
+        >Husna Omer</a
+      >
+      with HTML, CSS and JavaScript
+    </footer>
+    <script>
+      function contactUs() {
+        let name = prompt("What is your name?");
+
+        if (name.length === 0) {
+          alert`you should enter a name`;
+        } else {
+          let email = prompt("What is your email");
+
+          alert(
+            "Welcome, " +
+              name +
+              "! We are really glad to have you in our super fun comunity"
+          );
+        }
+      }
+
+      let button = document.querySelector("#button");
+      button.addEventListener("click", contactUs);
+    </script>
+  </body>
+</html>
